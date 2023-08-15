@@ -44,6 +44,12 @@ chm2 <- canopyCalc(dsm,dtm)
 
 chm2
 
+# plot chm
+
+plot(chm2, main="Canopy Height Model \n SJER, California")
+
+
+
 # can also use overlay function
 
 chm3 <- overlay(dsm,dtm, fun = canopyCalc)
