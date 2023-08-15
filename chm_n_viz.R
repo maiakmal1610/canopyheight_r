@@ -20,7 +20,7 @@ dsm
 dev.off(dev.list()["RStudioGD"])
 
 # plot DSM
-plot(dsm, main="Lidar Digital surface Model \n SJER, California")
+plot(dsm, main="Lidar Digital Surface Model \n SJER, California")
 plot(dsm, useRaster=TRUE)
 
 # import dtm
