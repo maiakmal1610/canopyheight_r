@@ -8,10 +8,9 @@ library(rgdal)
 wd = "C:/Users/User/Desktop/intern maisarah RS Module/NEONDSFieldSiteSpatialData"
 setwd(wd)
 ## Import DSM
-# assign raster to object
-dsm <- raster(paste0('NEON-DS-Field-Site-Spatial-Data\SJER\DigitalSurfaceModel\SJER2013_DSM.tif'))
 
-# above code doesnt work bcs use \ instead of /
+# assign raster to object
+
 dsm <- raster(paste0("NEON-DS-Field-Site-Spatial-Data/SJER/DigitalSurfaceModel/SJER2013_DSM.tif"))
 
 # view info about raster
@@ -43,6 +42,12 @@ canopyCalc <- function(DTM, DSM) {
 chm2 <- canopyCalc(dsm,dtm)
 
 chm2
+
+# plot chm
+
+plot(chm2, main="Canopy Height Model \n SJER, California")
+
+
 
 # can also use overlay function
 
